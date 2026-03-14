@@ -27,3 +27,16 @@ https://merlin-prompt-studio.onrender.com
 - CSS
 
 ## Project Structure
+merlin-prompt-studio
+│
+├── app.py
+├── requirements.txt
+├── templates
+│   └── index.html
+└── README.md
+
+## Author
+Dev Mishra
+
+B.Tech Student | AI & Web Development Enthusiast
+Interested in building practical AI-powered tools and applications.
