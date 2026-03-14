@@ -14,7 +14,7 @@ In the future, prompt interfaces may evolve into full AI collaboration environme
 
 This shift would transform AI from a reactive tool into a collaborative partner.
 
-As AI assistants become more integrated into everyday workflows, the quality of the interface will matter as much as the intelligence of the model itself. The best AI products will not only generate answers — they will help users ask better questions.
+As AI assistants become more integrated into everyday workflows, the quality of the interface will matter as much as the intelligence of the model itself. The best AI products will not only generate answers but also they will help users ask better questions.
 
 Merlin and similar AI platforms are well positioned to lead this shift. By focusing on how users interact with AI rather than only improving the models behind it, they can redefine what productive AI workflows look like.
 
