@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Merlin Prompt Studio</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#f5f7fb;
+padding:40px;
+text-align:center;
+}
+
+.container{
+background:white;
+padding:35px;
+border-radius:12px;
+width:600px;
+margin:auto;
+box-shadow:0px 8px 25px rgba(0,0,0,0.1);
+}
+
+h1{
+margin-bottom:5px;
+}
+
+.subtitle{
+color:gray;
+margin-bottom:20px;
+}
+
+textarea{
+width:100%;
+height:120px;
+padding:12px;
+margin-top:10px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+button{
+margin-top:10px;
+padding:10px 18px;
+background:black;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:14px;
+}
+
+button:hover{
+background:#333;
+}
+
+.templates{
+margin-top:15px;
+}
+
+.template-btn{
+background:#e8ecf5;
+color:black;
+margin:5px;
+padding:6px 10px;
+font-size:12px;
+border-radius:5px;
+}
+
+.result{
+margin-top:25px;
+background:#f1f3f8;
+padding:15px;
+border-radius:8px;
+text-align:left;
+}
+
+.copy-btn{
+background:#007bff;
+margin-top:10px;
+}
+
+.copy-btn:hover{
+background:#0056b3;
+}
+
+</style>
+
+<script>
+
+function fillPrompt(text){
+document.getElementById("promptBox").value = text;
+}
+
+function copyPrompt(){
+var text = document.getElementById("enhancedPrompt").innerText;
+navigator.clipboard.writeText(text);
+alert("Prompt copied!");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Merlin Prompt Studio</h1>
+<p class="subtitle">Optimize prompts before sending them to Merlin AI</p>
+
+<form method="POST">
+
+<textarea id="promptBox" name="prompt" placeholder="Enter your prompt here..."></textarea>
+
+<br>
+
+<button type="submit">Enhance Prompt</button>
+
+</form>
+
+
+<div class="templates">
+
+<p><b>Prompt Templates</b></p>
+
+<button class="template-btn" onclick="fillPrompt('Explain this concept in simple terms with examples')">
+Explain Concept
+</button>
+
+<button class="template-btn" onclick="fillPrompt('Summarize this article in bullet points')">
+Summarize Article
+</button>
+
+<button class="template-btn" onclick="fillPrompt('Write a professional LinkedIn post about this topic')">
+LinkedIn Post
+</button>
+
+<button class="template-btn" onclick="fillPrompt('Generate startup ideas in this industry')">
+Startup Ideas
+</button>
+
+</div>
+
+
+{% if improved_prompt %}
+
+<div class="result">
+
+<h3>Enhanced Prompt</h3>
+
+<p id="enhancedPrompt">{{ improved_prompt }}</p>
+
+<button class="copy-btn" onclick="copyPrompt()">Copy Prompt</button>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+
+</html>
