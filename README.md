@@ -1,25 +1,29 @@
 # Merlin Prompt Studio
 
-A small AI tool that optimizes prompts before sending them to Merlin AI.
+Merlin Prompt Studio is a lightweight AI-powered tool that helps users improve and structure prompts before sending them to AI assistants such as Merlin.  
+It analyzes a raw user prompt and generates a clearer, more optimized version to produce better AI responses.
+
+## Live Demo
+https://merlin-prompt-studio.onrender.com
 
 ## Features
-- Prompt enhancement using AI
-- Prompt templates
-- One-click copy feature
+- AI-powered prompt enhancement
+- Structured prompt suggestions
+- Prompt templates for common use cases
+- One-click copy for optimized prompts
+- Simple and fast web interface
+
+## How It Works
+1. The user enters a raw prompt.
+2. The system processes the prompt using an AI model through the Groq API.
+3. The AI restructures and enhances the prompt to make it clearer and more effective.
+4. The optimized prompt is displayed for easy copying and reuse.
 
 ## Tech Stack
 - Python
 - Flask
-- Llama AI (Groq API)
-- HTML / CSS
+- Groq API (Llama AI model)
+- HTML
+- CSS
 
-## Demo
-Users can enter a prompt and get an improved version optimized for AI responses.
-
-
-
-## Why I Built This
-Instead of submitting a resume, I decided to build a small tool that could help Merlin users write better prompts.
-
-## Author
-Dev Mishra
+## Project Structure
